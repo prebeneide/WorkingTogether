@@ -1,0 +1,70 @@
+{
+  "common": {
+    "title": "WorkingTogether",
+    "description": "Et moderne kollaborativt arbeidsrom for remote samarbeid",
+    "welcome": "Velkommen",
+    "loading": "Laster...",
+    "save": "Lagre",
+    "cancel": "Avbryt",
+    "delete": "Slett",
+    "edit": "Rediger",
+    "create": "Opprett",
+    "close": "Lukk"
+  },
+  "theme": {
+    "light": "Lys",
+    "dark": "Mørk",
+    "system": "System",
+    "toggleTheme": "Bytt tema"
+  },
+  "accentColor": {
+    "blue": "Blå",
+    "green": "Grønn",
+    "purple": "Lilla",
+    "orange": "Oransje",
+    "red": "Rød",
+    "pink": "Rosa",
+    "chooseColor": "Velg hovedfarge"
+  },
+  "test": {
+    "title": "Glassmorphism Design System Test",
+    "glassCard": "Glasskort",
+    "lightGlass": "Lys glass",
+    "strongGlass": "Sterk glass",
+    "glassButton": "Glassknapp",
+    "lightGlassButton": "Lys glassknapp",
+    "primaryButton": "Primærknapp (Hovedfarge)",
+    "accentOutline": "Hovedfarge kontur",
+    "glassInput": "Glass inputfelt",
+    "defaultInput": "Standard inputfelt",
+    "accentLinks": "Hovedfarge lenker",
+    "linkDescription": "Lenker bruker automatisk hovedfargen du velger.",
+    "buttonDescription": "Klikk på fargevelgeren for å endre hovedfargen. Primærknapper og lenker vil endre farge.",
+    "defaultCard": "Standard kort",
+    "standardCard": "Standard kort uten glassmorphism"
+  },
+  "auth": {
+    "login": "Logg inn",
+    "register": "Registrer",
+    "logout": "Logg ut",
+    "email": "E-post",
+    "password": "Passord",
+    "confirmPassword": "Bekreft passord",
+    "username": "Brukernavn",
+    "displayName": "Visningsnavn",
+    "forgotPassword": "Glemt passord?",
+    "alreadyHaveAccount": "Har du allerede en konto?",
+    "dontHaveAccount": "Har du ikke en konto?",
+    "signIn": "Logg inn",
+    "signUp": "Registrer deg",
+    "signingIn": "Logger inn...",
+    "signingUp": "Registrerer...",
+    "loginError": "Kunne ikke logge inn. Sjekk innloggingsdetaljene dine.",
+    "registerError": "Kunne ikke opprette konto. Prøv igjen.",
+    "emailRequired": "E-post er påkrevd",
+    "passwordRequired": "Passord er påkrevd",
+    "passwordTooShort": "Passord må være minst 6 tegn",
+    "passwordsDontMatch": "Passordene stemmer ikke overens"
+  }
+}
+

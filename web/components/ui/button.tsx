@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
       variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "text-primary-foreground",
         destructive:
           "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
@@ -18,7 +18,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline",
+        link: "underline-offset-4 hover:underline",
         glass:
           "glass hover:bg-white/20 dark:hover:bg-black/20 transition-all",
         "glass-light":
@@ -47,6 +47,7 @@ function Button({
   variant = "default",
   size = "default",
   asChild = false,
+  style,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
@@ -54,12 +55,18 @@ function Button({
   }) {
   const Comp = asChild ? Slot : "button"
 
+  // Apply accent color for default variant
+  const defaultStyle = variant === "default" 
+    ? { backgroundColor: "var(--accent-color)", ...style }
+    : style
+
   return (
     <Comp
       data-slot="button"
       data-variant={variant}
       data-size={size}
       className={cn(buttonVariants({ variant, size, className }))}
+      style={defaultStyle}
       {...props}
     />
   )

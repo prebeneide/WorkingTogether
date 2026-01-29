@@ -79,6 +79,41 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  
+  /* Accent color - default blue */
+  --accent-color: oklch(0.646 0.222 241.116);
+  --accent-color-light: oklch(0.696 0.17 241.48);
+}
+
+/* Accent color variants */
+[data-accent-color="blue"] {
+  --accent-color: oklch(0.646 0.222 241.116);
+  --accent-color-light: oklch(0.696 0.17 241.48);
+}
+
+[data-accent-color="green"] {
+  --accent-color: oklch(0.646 0.222 141.116);
+  --accent-color-light: oklch(0.696 0.17 141.48);
+}
+
+[data-accent-color="purple"] {
+  --accent-color: oklch(0.646 0.222 301.116);
+  --accent-color-light: oklch(0.696 0.17 301.48);
+}
+
+[data-accent-color="orange"] {
+  --accent-color: oklch(0.646 0.222 51.116);
+  --accent-color-light: oklch(0.696 0.17 51.48);
+}
+
+[data-accent-color="red"] {
+  --accent-color: oklch(0.646 0.222 27.325);
+  --accent-color-light: oklch(0.696 0.17 27.325);
+}
+
+[data-accent-color="pink"] {
+  --accent-color: oklch(0.646 0.222 341.116);
+  --accent-color-light: oklch(0.696 0.17 341.48);
 }
 
 .dark {
@@ -113,6 +148,37 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+/* Dark mode accent colors */
+.dark [data-accent-color="blue"] {
+  --accent-color: oklch(0.696 0.17 241.48);
+  --accent-color-light: oklch(0.746 0.19 241.48);
+}
+
+.dark [data-accent-color="green"] {
+  --accent-color: oklch(0.696 0.17 141.48);
+  --accent-color-light: oklch(0.746 0.19 141.48);
+}
+
+.dark [data-accent-color="purple"] {
+  --accent-color: oklch(0.696 0.17 301.48);
+  --accent-color-light: oklch(0.746 0.19 301.48);
+}
+
+.dark [data-accent-color="orange"] {
+  --accent-color: oklch(0.696 0.17 51.48);
+  --accent-color-light: oklch(0.746 0.19 51.48);
+}
+
+.dark [data-accent-color="red"] {
+  --accent-color: oklch(0.696 0.17 27.325);
+  --accent-color-light: oklch(0.746 0.19 27.325);
+}
+
+.dark [data-accent-color="pink"] {
+  --accent-color: oklch(0.696 0.17 341.48);
+  --accent-color-light: oklch(0.746 0.19 341.48);
 }
 
 @layer base {
@@ -151,5 +217,31 @@
   
   .gradient-bg-dark {
     @apply dark:bg-gradient-to-br dark:from-background dark:via-background dark:to-muted/30;
+  }
+
+  /* Accent color utilities */
+  .text-accent-color {
+    color: var(--accent-color);
+  }
+  
+  .bg-accent-color {
+    background-color: var(--accent-color);
+  }
+  
+  .border-accent-color {
+    border-color: var(--accent-color);
+  }
+  
+  .ring-accent-color {
+    --tw-ring-color: var(--accent-color);
+  }
+  
+  /* Links use accent color */
+  a {
+    color: var(--accent-color);
+  }
+  
+  a:hover {
+    color: color-mix(in srgb, var(--accent-color) 80%, transparent);
   }
 }

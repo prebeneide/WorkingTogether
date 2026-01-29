@@ -18,48 +18,51 @@ Denne guiden beskriver hvordan vi skal implementere prosjektet i små, oversiktl
 - [x] Test visuelt i både light og dark mode
 
 ### Steg 0.3: Tema System
-- [ ] Sett opp CSS variables for farger
-- [ ] Implementer dark/light mode switcher
-- [ ] Test tema-switching
-- [ ] Lagre tema-preferanse i localStorage
+- [x] Sett opp CSS variables for farger
+- [x] Implementer dark/light mode switcher
+- [x] Test tema-switching
+- [x] Lagre tema-preferanse i localStorage
 
 ### Steg 0.4: Fargevelger System
-- [ ] Definer 6 hovedfarger (blå, grønn, lilla, oransje, rød, rosa)
-- [ ] Implementer CSS variables for hovedfarger
-- [ ] Lag fargevelger komponent
-- [ ] Test at farger påvirker tekstelementer og hovedelementer
-- [ ] Lagre fargevalg i database (users.accent_color)
+- [x] Definer 6 hovedfarger (blå, grønn, lilla, oransje, rød, rosa)
+- [x] Implementer CSS variables for hovedfarger
+- [x] Lag fargevelger komponent
+- [x] Test at farger påvirker tekstelementer og hovedelementer
+- [ ] Lagre fargevalg i database (users.accent_color) - Gjøres senere med Supabase
 
 ### Steg 0.5: Internasjonalisering Setup
-- [ ] Installer next-intl
-- [ ] Konfigurer next-intl i Next.js
-- [ ] Opprett oversettelsesfiler for `en` og `no`
-- [ ] Implementer språkvelger i UI
-- [ ] Test språkbytte
+- [x] Installer next-intl
+- [x] Konfigurer next-intl i Next.js
+- [x] Opprett oversettelsesfiler for `en` og `no`
+- [x] Implementer språkvelger i UI
+- [x] Test språkbytte
 
 ### Steg 0.6: Locale Formatering
-- [ ] Implementer timezone detection
-- [ ] Implementer tidsformat (12/24-timers) basert på locale
-- [ ] Implementer datoformat basert på locale
-- [ ] Implementer tallformat med locale-spesifikke separatorer
-- [ ] Test formatering i begge språk
+- [x] Implementer timezone detection (via browser / Intl API)
+- [x] Implementer tidsformat (12/24-timers) basert på locale
+- [x] Implementer datoformat basert på locale
+- [x] Implementer tallformat med locale-spesifikke separatorer
+- [x] Test formatering i begge språk (via LocaleDemo-komponent)
 
 ### Steg 0.7: Database Schema for i18n & Tema
-- [ ] Oppdater users tabell med locale, timezone, theme, accent_color
-- [ ] Test database oppdateringer
-- [ ] Opprett migrasjoner
+- [x] Oppdater users tabell med locale, timezone, theme, accent_color (se `web/supabase_migration_users.sql`)
+- [ ] Test database oppdateringer (gjøres når Supabase er satt opp)
+- [x] Opprett migrasjoner (første migrasjon for `users`-tabellen laget)
 
 ## 📋 Fase 1: MVP - Grunnleggende Funksjoner
 
 ### Steg 1.1: Supabase Setup
-- [ ] Opprett Supabase prosjekt
-- [ ] Konfigurer environment variables
+- [x] Installer @supabase/supabase-js og @supabase/ssr
+- [x] Opprett Supabase client utilities (client.ts og server.ts)
+- [x] Opprett .env.example fil
+- [ ] Opprett Supabase prosjekt (gjør dette manuelt på supabase.com)
+- [ ] Konfigurer environment variables (kopier .env.example til .env.local og fyll inn)
 - [ ] Test tilkobling til Supabase
 
 ### Steg 1.2: Autentisering
-- [ ] Implementer registrering (med i18n)
-- [ ] Implementer innlogging (med i18n)
-- [ ] Implementer utlogging
+- [x] Implementer registrering (med i18n)
+- [x] Implementer innlogging (med i18n)
+- [x] Implementer utlogging
 - [ ] Test autentisering
 
 ### Steg 1.3: Profil

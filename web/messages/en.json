@@ -1,0 +1,70 @@
+{
+  "common": {
+    "title": "WorkingTogether",
+    "description": "A modern collaborative workspace for remote collaboration",
+    "welcome": "Welcome",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "close": "Close"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggleTheme": "Toggle theme"
+  },
+  "accentColor": {
+    "blue": "Blue",
+    "green": "Green",
+    "purple": "Purple",
+    "orange": "Orange",
+    "red": "Red",
+    "pink": "Pink",
+    "chooseColor": "Choose accent color"
+  },
+  "test": {
+    "title": "Glassmorphism Design System Test",
+    "glassCard": "Glass Card",
+    "lightGlass": "Light Glass",
+    "strongGlass": "Strong Glass",
+    "glassButton": "Glass Button",
+    "lightGlassButton": "Light Glass Button",
+    "primaryButton": "Primary Button (Accent Color)",
+    "accentOutline": "Accent Outline",
+    "glassInput": "Glass input field",
+    "defaultInput": "Default input field",
+    "accentLinks": "Accent Color Links",
+    "linkDescription": "Links automatically use the accent color you choose.",
+    "buttonDescription": "Click the color picker to change the accent color. Primary buttons and links will change color.",
+    "defaultCard": "Default Card",
+    "standardCard": "Standard card without glassmorphism"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "username": "Username",
+    "displayName": "Display Name",
+    "forgotPassword": "Forgot password?",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "signingIn": "Signing in...",
+    "signingUp": "Signing up...",
+    "loginError": "Failed to sign in. Please check your credentials.",
+    "registerError": "Failed to create account. Please try again.",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "passwordTooShort": "Password must be at least 6 characters",
+    "passwordsDontMatch": "Passwords don't match"
+  }
+}
+
